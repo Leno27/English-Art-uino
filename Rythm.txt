@@ -1,0 +1,25 @@
+setup(){
+    ...
+}
+
+loop(){
+    int i = 0;
+    int speed; // "Tickspeed" 
+
+
+    Color[?] = {(0,0,0,0),(255,0,0,0)...}
+    LEDs.color(Color[0]);
+
+    int array[LEDs]; //array mit einer länge, gleich der anzahl der LEDs 
+
+    bool button = Button.State //Knopf gedrückt oder nicht 
+
+    while (BEDINGUNG) //Entweder nach erreichen der letzten Stufe oder Spielabbruch durch anderen Knopf{
+        array[i].glow; //LED an der Stelle i leuchten lassen
+        i += 1;
+        if (button && (array[0] || array[LEDs])){
+        speed += 1;
+        Color[speed];
+        }
+    }
+}
