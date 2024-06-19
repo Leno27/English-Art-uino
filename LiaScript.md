@@ -4,8 +4,7 @@ Welcome to the presentation of our Arduino LED animation project. Let's explore 
 
 ## Idea Origin
 
-Our first idea for this project was, to make a rythm game, because we wanted to create an interactive and entertaining product. But we soon realised that our initial thought would be to hard to implement, due to lack of hardware, time and, ultimatly, knowledge. 
-
+Our first idea for this project was to make a rhythm game, because we wanted to create an interactive and entertaining product. But we soon realized that our initial thought would be too hard to implement due to lack of hardware, time, and ultimately, knowledge.
 
 ## What Does the Code Do?
 
