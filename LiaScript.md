@@ -32,9 +32,9 @@ The code controls an array of 12 addressable LEDs, cycling through different col
 
 CRGB leds[LED_COUNT];
 
-enum Colors {Red, Orange, Yellow, Green, Blue, Aqua, Violet, Pink};
+enum Colors {Red, Orange, Yellow, Green, Blue,Aqua, Violet,Pink};
 // Define the delay times for each color
-const int delayTimes[] = {150, 130, 110, 90, 70, 50,30,18};
+const int delayTimes[] = {150, 130, 110, 90, 75, 60,45,30};
 
 Colors currentColor = Red;
 int ColorAmount = 8;
@@ -47,6 +47,8 @@ CRGB getColor(Colors color) {
     case Yellow: return CRGB::Yellow;
     case Orange: return CRGB::Orange;
     case Red:    return CRGB::Red;
+    case Aqua:   return CRGB::Aqua;
+    case Pink:   return CRGB::Pink;
     default:     return CRGB::White; // Default to white if something goes wrong
   }
 }
@@ -62,10 +64,12 @@ void loop() {
 
   // Move light from left to right
   for (int i = 0; i < LED_COUNT; i++) {
-    FastLED.clear();
-    leds[i] = getColor(currentColor); // Set current LED to the current color
-    FastLED.show();
-    delay(delayTime);
+        FastLED.clear();
+        leds[i] = getColor(currentColor);
+        leds[i-1] = getColor(currentColor);
+        leds[i-2] = getColor(currentColor);// Set current LED to the current color
+        FastLED.show();
+        delay(delayTime);
   }
 
   // Change to the next color
@@ -75,7 +79,9 @@ void loop() {
   // Move light from right to left
   for (int i = LED_COUNT - 1; i >= 0; i--) {
     FastLED.clear();
-    leds[i] = getColor(currentColor); // Set current LED to the current color
+    leds[i] = getColor(currentColor);
+    leds[i-1] = getColor(currentColor);
+    leds[i-2] = getColor(currentColor);
     FastLED.show();
     delay(delayTime);
   }
