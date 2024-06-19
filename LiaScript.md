@@ -96,10 +96,8 @@ void loop() {
 
 ## Challenges during development 
 
-- Timing Issues: Ensuring smooth transitions required fine-tuning delay times.
+- Understanding Arduino code and syntax.
 
-- Power Management: Managing power consumption to prevent flickering and ensure stable operation.
-
-- Color Calibration: Achieving accurate color representation needed careful calibration of the LEDs.
+- Implementing our ideas as code.
 
 ## Simulation 
