@@ -4,7 +4,7 @@ Welcome to the presentation of our Arduino LED animation project. Let's explore 
 
 ## Idea Origin
 
-The idea for this project came from a desire to create a visually appealing and dynamic lighting display using Arduino and addressable LEDs. We aimed to create an engaging project that showcases the versatility of the FastLED library.
+Our first idea for this project was, to make a rythm game, because we wanted to create an interactive and entertaining product. But we soon realised that our initial thought would be to hard to implement, due to lack of hardware, time and, ultimatly, knowledge. 
 
 
 ## What Does the Code Do?
