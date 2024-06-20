@@ -22,7 +22,7 @@ The code controls an array of 12 addressable LEDs, cycling through different col
     - Use a loop to move the light from left to right, then right to left, changing colors at each end.
     - Update the color and delay time after each full cycle.
 
-To test the following code click on the link below and paste our program into the "code" section.
+To test the following code click on the link below and paste our program into the "code" section.                
 https://liascript.github.io/course/?https://raw.githubusercontent.com/TUBAF-IUZ-LiaScript/ENGLISH-ROB-BGIP/main/Arduino-projects/main.md#3
 
 ```cpp
